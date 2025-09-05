@@ -28,7 +28,7 @@ const displayLevelWord = (words) => {
 
         const card = document.createElement("div")
         card.innerHTML = `
-        <div class="bg-white p-8 rounded-lg shadow-lg text-center max-w-sm w-full">
+        <div class="bg-white p-8 rounded-lg shadow-lg text-center w-[500px] max-w-sm  ">
     <h1 class="text-4xl font-bold mb-4">${word.word}</h1>
     <p class="text-gray-600 font-semibold mb-6">Meaning /Pronunciation</p>
     <p class="text-2xl font-semibold mb-8 font-bangla">${word.meaning} / ${word.pronunciation}</p>

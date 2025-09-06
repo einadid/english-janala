@@ -5,6 +5,12 @@ const loadLessons = () => {
         .then(json => displayLesson(json.data))
 }
 
+function pronounceWord(word) {
+    const utterance = new SpeechSynthesisUtterance(word);
+    utterance.lang = "en-EN"; // English
+    window.speechSynthesis.speak(utterance);
+}
+
 const manageSpinner = (status) => {
     if (status == true) {
         document.getElementById("spinner").classList.remove("hidden")
@@ -117,7 +123,7 @@ const displayLevelWord = (words) => {
                         hover:bg-blue-800 hover:text-white">
                         <i class="fa-solid fa-circle-info"></i>
                     </button>
-                    <button class="btn bg-blue-100 text-blue-800 p-3 rounded-xl flex items-center justify-center w-12 h-12
+                    <button onclick="pronounceWord('${word.word}')" class="btn bg-blue-100 text-blue-800 p-3 rounded-xl flex items-center justify-center w-12 h-12
                         hover:bg-blue-800 hover:text-white">
                         <i class="fa-solid fa-volume-high"></i>
                     </button>

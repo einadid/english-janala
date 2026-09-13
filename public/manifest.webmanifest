@@ -1,0 +1,26 @@
+{
+  "name": "English Janala",
+  "short_name": "Janala",
+  "description": "Adaptive, offline-first English learning studio for Bangla speakers.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#070c18",
+  "theme_color": "#070c18",
+  "lang": "bn",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "./assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/hero-student.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
